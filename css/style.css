@@ -1,0 +1,86 @@
+p {
+    text-indent: 30px;
+}
+
+a {
+    color: limegreen;
+    font-size: 23px;
+}
+
+#p1 {
+    background: linear-gradient(aqua 40%,limegreen);
+}
+
+#ol1 {
+    font-size: 21px;
+    /*Делаем текст градиентом*/
+    background: linear-gradient(30rad,black,aqua 170%);
+    /*Делаем фон по контуру текста*/
+    -webkit-background-clip: text;
+    /*Убираем текст, делаем прозрачным*/
+    -webkit-text-fill-color: transparent;
+}
+
+.table-factory{
+    background: burlywood;
+    border: 2px dashed;
+    margin-left: 30px;
+    padding: 3px;
+    border-radius: 15px;
+}
+
+.table-factory td{
+    padding: 7px;
+    transition: 1s;
+}
+
+.table-factory td:hover{
+    padding: 20px;
+}
+
+.line {
+    position: center;
+    /*Отступ блоков от краев*/
+    margin: 15px;
+    /*Отступ блоков изнутри*/
+    padding: 15px;
+    /*Рамка (Толщина, solid(сплошная) dashed (пунктир), цвет )*/
+    border: 5px solid #474747;
+    background: cornsilk;
+    /*Радиус рамки (закругления)*/
+    border-radius: 30px;
+    text-align: center;
+    /*Прозрачность блока*/
+    opacity: 0.7;
+    /*Плавность создания (формирование), можно использовать с hover для эффектов*/
+    transition: 1s;
+    /*ТЕНЬ (Сдвиг по Х, Сдвиг по Y, Размытие, Цвет*/
+    box-shadow: -33px 33px 45px black;
+    width: 300px;
+    height: 15px;
+}
+
+.line:hover {
+    opacity: 1;
+    /*ТЕНЬ (Сдвиг по Х, Сдвиг по Y, Размытие, Цвет*/
+    box-shadow: -15px 33px 35px black;
+    width: 400px;
+    height: 20px;
+    background: bisque;
+}
+
+.circle{
+    /*Плавность. Сначала секунды, а потом какую функцию мы хотим*/
+    transition: 3s transform;
+    border: 1px solid black;
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    display: block;
+    background: linear-gradient(45deg,rgba(255,0,0,0.8),rgba(0,0,255,0.9) 90%);
+}
+
+.circle:hover{
+    /*анимация.( Имя функции() )  например: rotate(угол поворота) scale(увеличение на)   */
+    transform: rotate(360deg) scale(1.1);
+}
