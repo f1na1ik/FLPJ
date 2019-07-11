@@ -2,9 +2,126 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Магазин "Пятерочка"</title>
 </head>
 <body>
-$END$
+    <header class="main-header">
+        <nav class="main-navigation">
+            <a href="#" class="main-header-logo">
+                <img src="#" alt="Логотип">
+            </a>
+            <ul class="site-navigation">
+                <li><a href="#">Информация</a></li>
+                <li><a href="#">Новости</a></li>
+                <li><a href="#">Цены</a></li>
+                <li><a href="catalog.html">Магазин</a></li>
+                <li><a href="#">Контакты</a></li>
+            </ul>
+            <ul class="user-navigation">
+                <li class="login-link"><a href="#">Вход</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <h1 class="visually-hidden">Магазин "Пятерочка"</h1>
+        <section class="features">
+            <h2 class="visually-hidden">Преимущества</h2>
+            <ul class="features-list">
+                <li class="features-item">
+                    <h3>Быстро</h3>
+                    <p>Наши кассиры самым быстрым способом обслужат вас!
+                     Вы не успеете даже простоять в очереди! Быстрей к нам!</p>
+                </li>
+                <li class="features-item">
+                    <h3>Дешево</h3>
+                    <p>У нас самые низкие цены среди всех магазинов. Достигнуто это было
+                    путем дипломатии с поставщиками, которые продают нам товар за бесценок!</p>
+                </li>
+                <li class="features-item">
+                    <h3>Круто</h3>
+                    <p>Если ваши друзья узнают, что вы закупаетесь в пятерочке, они будут вам завидовать!
+                    Мы позаботились о продвижении бренда среди всех слоев населения! Нашей продукцией пользуются все -
+                    от президента до школьника.</p>
+                </li>
+            </ul>
+        </section>
+
+        <section class="news">
+            <h2>Новости</h2>
+            <ul class="news-list">
+                <li class="news-item">
+                    <p>Наконец-то у нас появился кредит на еду! Вы можете взять любимый напиток и только потом отдать деньги!!</p>
+                    <time datetime="2019-07-11">11 июля</time>
+                </li>
+                <li class="news-item">
+                    <p>К нам зашел господин Навальный! Но наши кассиры его не обслужили. Гордимся персоналом!</p>
+                    <time datetime="2019-07-12">12 июля</time>
+                </li>
+            </ul>
+            <a class="button" href="#">Все новости</a>
+        </section>
+
+        <section class="gallery">
+            <h2>Фотогалерея</h2>
+            <div class="gallery-content">
+                <a href="#"><img src="#" alt="Фотографии" width="300"></a>
+            </div>
+            <span class="button gallery-button gallery-button-back">Назад</span>
+            <span class="button gallery-button gallery-button-next">Вперед</span>
+        </section>
+
+        <section>
+            <h2 class="contacts">Контактная информация</h2>
+            <p>
+                Магазин "Пятерочка"<br>
+                Телефон главного: 89021926240
+            </p>
+            <p>
+                Звонить: <br>
+                пн-пт: с 15:00 до 15:15 <br>
+                сб-вс: не звонить.
+            </p>
+            <a class="button" href="#">Как проехать</a>
+            <a class="button" href="#">Обратная связь</a>
+        </section>
+
+        <section class="appointment">
+            <h2>Записаться на встречу</h2>
+            <p class="appointment-info">Укажите желаемую дату и время и мы свяжемся с вами</p>
+            <!--Форма!-->
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <p class="footer-contacts">
+            Магазин "Пятерочка" <br>
+            Главный офис в Северодвинске <br>
+            Адресс: Ул.Юбилейная, д. 61 <br>
+            <a href="#">Как нас найти?</a>
+        </p>
+        <div class="footer-social">
+            <b>Подписывайся!</b>
+            <ul>
+                <li><a class="social-button" href="#">Вк</a></li>
+                <li><a class="social-button" href="#">Инста</a></li>
+                <li><a class="social-button" href="#">Твиттер</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <section class="modal modal-login">
+        <h2>Личный кабинет</h2>
+        <p>Введите свой логин и пароль</p>
+        <!--Тут будет форма-->
+        <span class="modal-close">x</span>
+    </section>
+
+    <section class="modal modal-map">
+        <h2>Как до нас добраться?</h2>
+        <!--Тут будет форма-->
+        <span class="modal-close">x</span>
+    </section>
+
 </body>
 </html>

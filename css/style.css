@@ -70,7 +70,7 @@ a {
 }
 
 .circle{
-    /*Плавность. Сначала секунды, а потом какую функцию мы хотим*/
+    /*Плавность. Сначала секунды, а потом какую функцию мы хотим заанимировать*/
     transition: 3s transform;
     border: 1px solid black;
     width: 200px;
@@ -83,4 +83,9 @@ a {
 .circle:hover{
     /*анимация.( Имя функции() )  например: rotate(угол поворота) scale(увеличение на)   */
     transform: rotate(360deg) scale(1.1);
+}
+
+.info {
+    display: flex;
+    justify-content: right;
 }
