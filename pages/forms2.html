@@ -14,19 +14,26 @@
             <p>
                 Имя
             </p>
-            <input tabindex="1" type="text" name="username">
+            <label for="username">Логин</label>
+            <input id="username" tabindex="1" type="text" name="username" placeholder="Логин">
         </div>
         <div>
             <p>
                 Пароль
             </p>
-            <input tabindex="2" type="password" name="passwd">
+            <label for="password">Пароль</label>
+            <input id="password" tabindex="2" type="password" name="passwd" placeholder="Пароль">
         </div>
         <div>
             <p>
                 Телефон
             </p>
-            <input tabindex="3" type="tel" name="telefon">
+            <label for="telefon">Телефон</label>
+            <input id="telefon" tabindex="3" type="tel" name="telefon" placeholder="Телефон">
+            <p>Либо оформляем так (смотреть код(так легче))</p>
+            <label>
+               Телефон  <input type="telefon" placeholder="telefon">
+            </label>
         </div>
         <div>
             <p>
@@ -85,24 +92,31 @@
             <a href="../index.html">Выход</a>
         </div>
         <div>
-            <br><br>
-            <table border="1">
-                <tr>
-                    <td>Куку</td>
-                    <td>Как дела</td>
-                    <td>Что делаешь</td>
-                </tr>
-                <tr>
-                    <td>Быстрей</td>
-                    <td>Иди</td>
-                    <td>На завод</td>
-                </tr>
-                <tr>
-                    <td>Давай</td>
-                    <td>Одевайся</td>
-                    <td>И на завод</td>
-                </tr>
-            </table>
+            <br>
+            <p>Все заводчане любят котиков</p>
+            <details>
+                <summary>Подробнее</summary>
+                <p>Но некоторые не любят =(</p>
+            </details>
+        </div>
+        <br><br>
+        Более правильное оформление выпадающего списка (СЕМАНТИКА)))))))
+        <div>
+            <label>
+                Ваше домашнее животное
+                <input list="user-pets">
+            </label>
+            <datalist id="user-pets">
+                <option value="Кошка"></option>
+                <option value="Собака"></option>
+                <option value="Кролик"></option>
+                <option value="Женщина"></option>
+                <option value="Крокодил"></option>
+                <option value="Человек"></option>
+            </datalist>
+        </div>
+        <div>
+
         </div>
     </form>
 </body>
