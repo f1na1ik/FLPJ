@@ -11,7 +11,7 @@
     <header>
         <nav class="main-navigation">
             <a href="#" class="main-header-logo">
-                <img src="img/logo.svg" alt="Логотип">
+                <img src="img/header-logo.svg" alt="Логотип">
             </a>
             <ul class="site-navigation">
                 <li><a href="#">Информация</a></li>
@@ -50,77 +50,81 @@
             </ul>
         </section>
 
-        <section class="news">
-            <h2>Новости</h2>
-            <ul class="news-list">
-                <li class="news-item">
-                    <p>НАМ НАКОНЕЦ ЗАВЕЗЛИ ЯГЕРМАЙСТЕР! ТЕПЕРЬ ВЫ МОЖЕТЕ ПРОПУСТИТЬ СТАКАНЧИК ВО ВРЕМЯ СТРИЖКИ</p>
-                    <time datetime="2019-07-11">11 июля</time>
-                </li>
-                <li class="news-item">
-                    <p>В НАШЕЙ КОМАНДЕ ПОПОЛНЕНИЕ, БОРИС «БРИТВА» СТРИГУНЕЦ, ОБЛАДAТЕЛЬ МНОЖЕСТВА ТИТУЛОВ И НАГРАД ПОПОЛНИЛ НАШИ СТРОЙНЫЕ РЯДЫ</p>
-                    <time datetime="2019-07-12">12 июля</time>
-                </li>
-            </ul>
-            <a class="button" href="#">Все новости</a>
-        </section>
+        <div class="index-columns">
+            <section class="news">
+                <h2>Новости</h2>
+                <ul class="news-list">
+                    <li class="news-item">
+                        <p>НАМ НАКОНЕЦ ЗАВЕЗЛИ ЯГЕРМАЙСТЕР! ТЕПЕРЬ ВЫ МОЖЕТЕ ПРОПУСТИТЬ СТАКАНЧИК ВО ВРЕМЯ СТРИЖКИ</p>
+                        <time datetime="2019-07-11">11 июля</time>
+                    </li>
+                    <li class="news-item">
+                        <p>В НАШЕЙ КОМАНДЕ ПОПОЛНЕНИЕ, БОРИС «БРИТВА» СТРИГУНЕЦ, ОБЛАДAТЕЛЬ МНОЖЕСТВА ТИТУЛОВ И НАГРАД ПОПОЛНИЛ НАШИ СТРОЙНЫЕ РЯДЫ</p>
+                        <time datetime="2019-07-12">12 июля</time>
+                    </li>
+                </ul>
+                <a class="button" href="#">Все новости</a>
+            </section>
 
-        <section class="gallery">
-            <h2>Фотогалерея</h2>
-            <div class="gallery-content">
-                <a href="#"><img src="#" alt="Фотографии" width="300"></a>
-            </div>
-            <button class="button gallery-button gallery-button-back">Назад</button>
-            <button class="button gallery-button gallery-button-next">Вперед</button>
-        </section>
+            <section class="gallery">
+                <h2>Фотогалерея</h2>
+                <div class="gallery-content">
+                    <a href="#"><img src="img/gallery1.jpg" alt="Фотографии" width="300"></a>
+                </div>
+                <button class="button gallery-button gallery-button-back">Назад</button>
+                <button class="button gallery-button gallery-button-next">Вперед</button>
+            </section>
+        </div>
 
-        <section>
-            <h2 class="contacts">Контактная информация</h2>
-            <p>
-                БАРБЕРШОП «БОРОДИНСКИЙ» <br>
-                АДРЕС: Г. САНКТ-ПЕТЕРБУРГ, Б. КОНЮШЕННАЯ, Д. 19/8 <br>
-                ТЕЛЕФОН: +7 (495) 666-02-66
-            </p>
-            <p>
-                ВРЕМЯ РАБОТЫ: <br>
-                ПН—ПТ: С 10:00 ДО 22:00 <br>
-                СБ—ВС: С 10:00 ДО 19:00
-            </p>
-            <a class="button" href="#">Как проехать</a>
-            <a class="button" href="#">Обратная связь</a>
-        </section>
+        <div class="index-columns">
+            <section>
+                <h2 class="contacts">Контактная информация</h2>
+                <p>
+                    БАРБЕРШОП «БОРОДИНСКИЙ» <br>
+                    АДРЕС: Г. САНКТ-ПЕТЕРБУРГ, Б. КОНЮШЕННАЯ, Д. 19/8 <br>
+                    ТЕЛЕФОН: +7 (495) 666-02-66
+                </p>
+                <p>
+                    ВРЕМЯ РАБОТЫ: <br>
+                    ПН—ПТ: С 10:00 ДО 22:00 <br>
+                    СБ—ВС: С 10:00 ДО 19:00
+                </p>
+                <a class="button" href="#">Как проехать</a>
+                <a class="button" href="#">Обратная связь</a>
+            </section>
 
-        <section class="appointment">
-            <h2>Записаться на встречу</h2>
-            <p class="appointment-info">Укажите желаемую дату и время и мы свяжемся с вами
-            для подтверждения брони</p>
-            <form action="#" method="post" class="appointment-form">
-                <p class="appointment-item">
-                    <label for="appointment-date">
-                        <input id="appointment-date" type="date" name="date" value="" >
-                    </label>
-                </p>
-                <p class="appointment-item">
-                    <label for="appointment-time">
-                    <input id="appointment-time" type="text" name="time" placeholder="10:00">
-                    </label>
-                </p>
-                <p class="appointment-item">
-                    <label for="appointment-name">
-                    <input id="appointment-name" type="text" name="name" placeholder="Иван Иванович">
-                    </label>
-                </p>
-                <p class="appointment-item">
-                    <label for="appointment-phone">
-                    <input id="appointment-phone" type="tel" name="phone" placeholder="+79021926240">
-                    </label>
-                </p>
-                <button
-                        class="button" type="submit">Отправить
-                </button>
-            </form>
-        </section>
-    </main>
+            <section class="appointment">
+                <h2>Записаться на встречу</h2>
+                <p class="appointment-info">Укажите желаемую дату и время и мы свяжемся с вами
+                для подтверждения брони</p>
+                <form action="#" method="post" class="appointment-form">
+                    <p class="appointment-item">
+                        <label for="appointment-date"> Дата
+                            <input id="appointment-date" type="text" name="date" placeholder="13.07.2019" >
+                        </label>
+                    </p>
+                    <p class="appointment-item">
+                        <label for="appointment-time"> Время
+                        <input id="appointment-time" type="text" name="time" placeholder="10:00">
+                        </label>
+                    </p>
+                    <p class="appointment-item">
+                        <label for="appointment-name"> Ваше имя
+                        <input id="appointment-name" type="text" name="name" placeholder="Иван Иванович">
+                        </label>
+                    </p>
+                    <p class="appointment-item">
+                        <label for="appointment-phone"> Телефон
+                        <input id="appointment-phone" type="tel" name="phone" placeholder="+79021926240">
+                        </label>
+                    </p>
+                    <button
+                            class="button" type="submit">Отправить
+                    </button>
+                </form>
+            </section>
+        </main>
+    </div>
 
     <footer class="main-footer">
         <p class="footer-contacts">
