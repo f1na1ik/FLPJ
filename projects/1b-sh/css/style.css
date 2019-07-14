@@ -25,10 +25,19 @@ body{
 a {
     /*оформление текста: нет (т.е не подчеркиваем текст у ссылок)*/
     text-decoration: none;
+    color: black;
 }
 
 a:visited{
     color: #000000;
+}
+
+.visually-hidden {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
 }
 
 .inner-page{
@@ -327,3 +336,118 @@ a:visited{
 .product-info li {
     list-style: none;
 }
+
+/*---------------Сеточные стили!*---------------*/
+
+html,
+body {
+    min-width: 1122px;
+    min-height: 1750px;
+}
+
+.main-header{
+    margin-bottom: 75px;
+}
+
+.container{
+    width: 940px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.main-navigation{
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-header-logo{
+    order: 3;
+    width: 371px;
+    height: 155px;
+}
+
+.main-navigation-wrapper{
+    width: 100%;
+    margin-bottom: 60px;
+    background-color: #000000;
+}
+
+.main-navigation-wrapper .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.site-navigation{
+    width: 620px;
+    margin: 0;
+    padding: 0;
+}
+
+.user-navigation{
+    width: 140px;
+    margin: 0;
+    padding: 0;
+}
+
+.features-list{
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+}
+
+.features-item {
+    width: 300px;
+}
+
+.features{
+    margin-bottom: 80px;
+}
+
+.index-columns{
+    padding: 50px 80px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 35px;
+}
+
+.news {
+    width: 380px;
+}
+
+.gallery{
+    width: 300px;
+    padding-left: 80px;
+}
+
+.appointment{
+    width: 300px;
+}
+
+.contacts{
+    width: 380px;
+}
+
+.main-footer{
+    margin-top: 65px;
+    padding: 60px 0;
+}
+
+.main-footer .container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-contacts{
+    margin: 0px;
+    width: 320px;
+}
+
+.footer-social {
+    width: 150px;
+    margin: 0px;
+}
+
+
